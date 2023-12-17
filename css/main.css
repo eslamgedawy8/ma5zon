@@ -28,9 +28,53 @@ body {
     align-items: center;
 } */
 
-.swiper {
-    width: 990px;
-    text-align: right;
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    color: #fff;
+}
+
+.swiper-button-next {
+    /* left: 64px; */
+    color: white;
+    background: #a5a5a5;
+    width: 28px;
+    height: 28px;
+}
+
+.swiper-button-prev {
+    /* left: 16px; */
+    color: white;
+    background: #a5a5a5;
+    width: 28px;
+    height: 28px;
+}
+
+.swiper-button-prev::after {
+    font-size: 16px;
+}
+
+.swiper-button-next::after {
+    font-size: 16px;
+}
+
+/* .swiper-button-next {
+    left: 0 !important;
+    right: auto !important;
+    top: 20px;
+}
+
+.swiper-button-prev {
+    left: 50px !important;
+    right: auto !important;
+    top: 20px;
+} */
+
+.container2 {
+    width: 100%;
 }
 
 /* bootstrap override */
@@ -46,7 +90,8 @@ body {
 }
 
 .home-wrapper__sidebar {
-    min-width: 296px;
+    min-width: 275px;
+    max-height: 750px;
     background-color: var(--blue-color);
     color: #fff;
     margin-top: 24px;
@@ -322,10 +367,16 @@ body {
 
   .home-wrapper__products {
     text-align: right;
+    position: relative;
   }
 
   .home-wrapper__products-header {
     margin: 20px 0 20px;
+  }
+
+  .home-wrapper__products-link {
+    color: var(--black-color);
+    text-decoration: none;
   }
 
   .home-wrapper__product-item {
@@ -423,6 +474,67 @@ body {
   }
 
 /* end home page */
+
+
+/* footer */
+
+.footer {
+    background-color: var(--blue-color);
+    color: white;
+    text-align: center;
+}
+
+.footer__head {
+    padding: 25px;
+}
+
+.footer__info {
+    margin: 32px 0;
+}
+
+.footer__copyrights {
+    padding: 10px 0;
+}
+
+.footer__copyrights::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #c2c0c0;
+    display: block;
+}
+
+.footer__copyrights span {
+    padding-top: 10px;
+    display: block;
+}
+
+.footer__social-link {
+    height: 40px;
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    margin: 0 15px;
+    color: #fff;
+}
+
+.footer__social-link img {
+    width: 100%;
+}
+
+
+
+.footer__social-link-separator::before {
+    content: "";
+    height: 45px;
+    display: inline-block;
+    width: 2px;
+    background-color: #b4aeae;
+    position: absolute;
+}
+
+/* end footer */
 
 /* mobile screen */
 
@@ -522,6 +634,10 @@ body {
 
     .home-wrapper__header--cart {
         margin: 0;
+    }
+    
+    .swiper-slide {
+        width: 300px;
     }
 }
 
