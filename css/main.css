@@ -32,6 +32,10 @@ body {
     overflow: hidden;
 }
 
+.swiper-wrapper {
+    width: 280px;
+}
+
 .swiper-slide {
     text-align: center;
     color: #fff;
