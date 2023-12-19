@@ -32,6 +32,10 @@ a:hover {
     align-items: center;
 } */
 
+.navbar-dark .navbar-toggler {
+    border-color: #fff;
+}
+
 .carousel-control-prev, .carousel-control-next {
     width: 30px;
     height: 29px;
@@ -355,6 +359,10 @@ a:hover {
     background-color: var(--yellow-color);
     position: absolute;
     bottom: -8px;
+}
+
+.home-wrapper__categories--item:not(:first-child) {
+    margin-right: 15px;
 }
 
 
@@ -704,6 +712,12 @@ a:hover {
     
     .home-wrapper__header--search-input {
         width: 150px;
+        height: 35px;
+    }
+
+    .home-wrapper__header--search-icon {
+        right: 16px;
+        top: 8px;
     }
 
     .home-wrapper__header--cart {
@@ -713,5 +727,24 @@ a:hover {
     .swiper-slide {
         width: 300px;
     }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .home-wrapper__categories--item-title {
+        margin-right: 0;
+    }
+
+    .home-wrapper__header--likes {
+        width: 40px;
+        height: 35px;
+    }
+    
+    .home-wrapper__header--coutries {
+        height: 35px;
+        width: 100px;
+    }
 }
+
 
