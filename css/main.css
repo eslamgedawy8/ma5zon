@@ -687,6 +687,10 @@ a:hover {
     .home-wrapper__header--profile {
         display: flex;
     }
+
+    .home-wrapper__header--coutries {
+        width: 189px;
+    }
 }
 
 /* large screens */
