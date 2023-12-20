@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- css -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -88,30 +89,49 @@
                     <span class="home-wrapper__menu-item-text">المنتجات</span>
                 </a>
             </li>
-            <li class="home-wrapper__menu--item">
-                <a href="#" class="home-wrapper__menu--item--link">
+            <div class="home-wrapper__menu--item-dropdown item">
+                <a class="sub-btn">
+                    <!-- <i class="fas fa-tasks"></i> -->
                     <img src="images/sidebar/task.svg" alt="orders">
-                    <span class="home-wrapper__menu-item-text">الطلبات</span>
+                    <span class="sub-btn-title">الطلبات</span>
+                    <i class="fas fa-angle-right dropdown"></i>
                 </a>
-            </li>
-            <li class="home-wrapper__menu--item">
-                <a href="#" class="home-wrapper__menu--item--link">
+                <div class="sub-menu">
+                <a href="#" class="sub-item">الطلبات</a>
+                <a href="#" class="sub-item">طلب جديد</a>
+                <a href="#" class="sub-item">طلب الاستبدال</a>
+                </div>
+            </div>
+            <div class="home-wrapper__menu--item-dropdown item">
+                <a class="sub-btn">
+                    <!-- <i class="fa fa-calendar-o" aria-hidden="true"></i> -->
                     <img src="images/sidebar/wallet.svg" alt="wallet">
-                    <span class="home-wrapper__menu-item-text">المحفظة و الفواتير</span>
+                    <span class="sub-btn-title">المحفظة و الفواتير</span>
+                    <i class="fas fa-angle-right dropdown"></i>
                 </a>
-            </li>
+                <div class="sub-menu">
+                <a href="#" class="sub-item">رصيد الحساب</a>
+                <a href="#" class="sub-item">سحب جديد</a>
+                <a href="#" class="sub-item">مسحوباتي</a>
+                </div>
+            </div>
             <li class="home-wrapper__menu--item">
                 <a href="#" class="home-wrapper__menu--item--link">
                     <img src="images/sidebar/notification.svg" alt="notification">
                     <span class="home-wrapper__menu-item-text">الإشعارات</span>
                 </a>
             </li>
-            <li class="home-wrapper__menu--item">
-                <a href="#" class="home-wrapper__menu--item--link">
+            <div class="home-wrapper__menu--item-dropdown item">
+                <a class="sub-btn">
                     <img src="images/sidebar/24-support.svg" alt="support">
-                    <span class="home-wrapper__menu-item-text">طلبات الدعم</span>
+                    <span class="sub-btn-title">طلبات الدعم</span>
+                    <i class="fas fa-angle-right dropdown"></i>
                 </a>
-            </li>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">تذكرة جديدة</a>
+                    <a href="#" class="sub-item">طلبات الدعم</a>
+                </div>
+            </div>
             <li class="home-wrapper__menu--item logout">
                 <a href="#" class="home-wrapper__menu--item--link">
                     <img src="images/sidebar/logout.svg" alt="logout">
@@ -1022,11 +1042,21 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
  <!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+ <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  <!-- Swiper JS -->
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+        });
+    });
+    </script>
 <script>
     // sidebar
     const menuLinks = document.querySelectorAll('.home-wrapper__menu--item--link');

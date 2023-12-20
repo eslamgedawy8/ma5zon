@@ -20,6 +20,11 @@ a:hover {
 
 /* utilities */
 
+.rotate{
+    transform: rotate(90deg);
+}
+
+
 /* .d-flex{
     display: flex;
 } */
@@ -163,6 +168,58 @@ a:hover {
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.home-wrapper__menu--item-dropdown {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.home-wrapper__menu--item-dropdown a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 25px;
+}
+
+.home-wrapper__menu--item-dropdown a:hover{
+    /* background: #33363a; */
+    transition: 0.3s ease;
+}
+
+.home-wrapper__menu--item-dropdown i{
+    font-size: 20px;
+}
+
+.home-wrapper__menu--item-dropdown a .dropdown{
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+
+.sub-btn {
+    display: flex;
+    align-items: center;
+}
+
+.sub-btn-title {
+    margin-right: 13px;
+}
+
+.home-wrapper__menu--item-dropdown .sub-menu{
+    /* background: #262627; */
+    display: none;
+    margin: 10px 0;
+}
+
+.home-wrapper__menu--item-dropdown .sub-menu a{
+    padding-left: 80px;
+    line-height: 40px;
 }
 
 .home-wrapper__menu--item--link.active::before {
