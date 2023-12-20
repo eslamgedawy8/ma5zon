@@ -1016,7 +1016,7 @@
                 </p>
                 <div class="footer__social">
                     <a href="#" class="footer__social-link">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                        <img src="images/home-page/footer/x.svg" alt="">
                     </a>
                     <span class="footer__social-link-separator"></span>
                     <a href="#" class="footer__social-link">
@@ -1024,11 +1024,11 @@
                     </a>
                     <span class="footer__social-link-separator"></span>
                     <a href="#" class="footer__social-link">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <img src="images/home-page/footer/x.svg" alt="">
                     </a>
                     <span class="footer__social-link-separator"></span>
                     <a href="#" class="footer__social-link">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <img src="images/home-page/footer/x.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -1048,72 +1048,6 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  <!-- Swiper JS -->
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
- <script type="text/javascript">
-    $(document).ready(function(){
-        //jquery for toggle sub menus
-        $('.sub-btn').click(function(){
-        $(this).next('.sub-menu').slideToggle();
-        $(this).find('.dropdown').toggleClass('rotate');
-        });
-    });
-    </script>
-<script>
-    // sidebar
-    const menuLinks = document.querySelectorAll('.home-wrapper__menu--item--link');
-  
-    menuLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        if (!this.parentElement.classList.contains('logout')) {
-            // Remove the 'active' class from all links
-            menuLinks.forEach(link => {
-              link.classList.remove('active');
-            });
-      
-            // Add the 'active' class to the clicked link
-            this.classList.add('active');
-        }
-      });
-    });
-
-
-    // categories
-    const tabLinks = document.querySelectorAll('.home-wrapper__categories--item');
-    tabLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            tabLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            this.classList.add('active');
-        });
-    });
-</script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 10
-                },
-                620: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                960: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
-                },
-                1200: {
-                    slidesPerView: 4,
-                    spaceBetween: 30
-                }
-            }
-        });
-    </script>
+ <!-- Custom JS -->
+ <script src="js/main.js"></script>
 </html>
