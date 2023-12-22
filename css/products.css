@@ -1,0 +1,43 @@
+
+@import url('variables.css');
+
+.products-page__products {
+    margin: 25px 0;
+}
+
+.products-page-navigation {
+    margin-top: 30px;
+    direction: ltr;
+    height: 25px;
+}
+
+.home-wrapper__product-item-desc {
+    text-align: center;
+}
+
+
+
+/* utilities */
+.pagination {
+    margin-left: auto;
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+.page-link {
+    padding: 6px 12px;
+    color: var(--black-color);
+}
+
+.page-link:hover {
+    color: #191d22;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.page-link:focus {
+    box-shadow: unset;
+}
+
+/* end utilities */

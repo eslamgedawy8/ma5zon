@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مخزون</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <!-- mobile screen -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">احصائياتي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">حسابي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">المنتجات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الطلبات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">المحفظة و الفواتير</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الإشعارات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">طلبات الدعم</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تسجيل الخروج</a>
+                </li>
+              </ul>
+        </div>
+    </nav>
+    <aside class="home-wrapper__sidebar">
+        <div class="home-wrapper__logo">
+            <img src="images/logo.svg" alt="ma5zon">
+        </div>
+        <ul class="home-wrapper__menu">
+            <li class="home-wrapper__menu--item">
+                <a href="index.html" class="home-wrapper__menu--item--link active">
+                    <img src="images/sidebar/home-2.svg" alt="home">
+                    <span class="home-wrapper__menu-item-text">الرئيسية</span>
+                </a>
+            </li>
+            <li class="home-wrapper__menu--item">
+                <a href="#" class="home-wrapper__menu--item--link">
+                    <img src="images/sidebar/status-up.svg" alt="stats">
+                    <span class="home-wrapper__menu-item-text">احصائياتي</span>
+                </a>
+            </li>
+            <li class="home-wrapper__menu--item">
+                <a href="#" class="home-wrapper__menu--item--link">
+                    <img src="images/sidebar/profile-circle.svg" alt="profile">
+                    <span class="home-wrapper__menu-item-text">حسابي</span>
+                </a>
+            </li>
+            <li class="home-wrapper__menu--item">
+                <a href="products.html" class="home-wrapper__menu--item--link">
+                    <img src="images/sidebar/category.svg" alt="products">
+                    <span class="home-wrapper__menu-item-text">المنتجات</span>
+                </a>
+            </li>
+            <div class="home-wrapper__menu--item-dropdown item">
+                <a class="sub-btn">
+                    <img src="images/sidebar/task.svg" alt="orders">
+                    <span class="sub-btn-title">الطلبات</span>
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                <a href="#" class="sub-item">الطلبات</a>
+                <a href="#" class="sub-item">طلب الاستبدال</a>
+                </div>
+            </div>
+            <div class="home-wrapper__menu--item-dropdown item">
+                <a class="sub-btn">
+                    <img src="images/sidebar/wallet.svg" alt="wallet">
+                    <span class="sub-btn-title">المحفظة و الفواتير</span>
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                <a href="#" class="sub-item">رصيد الحساب</a>
+                <a href="#" class="sub-item">سحب جديد</a>
+                <a href="#" class="sub-item">مسحوباتي</a>
+                </div>
+            </div>
+            <li class="home-wrapper__menu--item">
+                <a href="#" class="home-wrapper__menu--item--link">
+                    <img src="images/sidebar/notification.svg" alt="notification">
+                    <span class="home-wrapper__menu-item-text">الإشعارات</span>
+                </a>
+            </li>
+            <div class="home-wrapper__menu--item-dropdown item">
+                <a class="sub-btn">
+                    <img src="images/sidebar/24-support.svg" alt="support">
+                    <span class="sub-btn-title">طلبات الدعم</span>
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">تذكرة جديدة</a>
+                    <a href="#" class="sub-item">طلبات الدعم</a>
+                </div>
+            </div>
+            <li class="home-wrapper__menu--item logout">
+                <a href="#" class="home-wrapper__menu--item--link">
+                    <img src="images/sidebar/logout.svg" alt="logout">
+                    <span class="home-wrapper__menu-item-text">تسجيل الخروج</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="home-wrapper">
+        <section class="home-wrapper__content">
+            <header class="home-wrapper__header">
+                <div class="home-wrapper__header--main">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <span class="home-wrapper__header--main-title">المنتجات</span>
+                </div>
+                <div class="home-wrapper__header--search">
+                    <input class="home-wrapper__header--search-input" type="text" placeholder="ابحث">
+                    <img class="home-wrapper__header--search-icon" src="images/header/search-icon.svg" alt="">
+                </div>
+                <select name="coutries" id="coutries" class="home-wrapper__header--coutries">
+                    <option value="الإمارات" class="home-wrapper__header--coutries-item">
+                        <img src="images/header/AE.svg" alt="">
+                        <span>الإمارات</span>
+                    </option>
+                    <option value="مصر" class="home-wrapper__header--coutries-item">
+                        <img src="images/header/AE.svg" alt="">
+                        <span>مصر</span>
+                    </option>
+                </select>
+                <div class="home-wrapper__header--actions">
+                    <a href="" class="home-wrapper__header--likes">
+                        <img src="images/header/heart.svg" alt="">
+                    </a>
+                    <a href="" class="home-wrapper__header--notifications">
+                        <img src="images/header/bell.png" alt="">
+                    </a>
+                    <a href="" class="home-wrapper__header--cart">
+                        <img src="images/header/cart.png" alt="">
+                    </a>
+                </div>
+                <div class="home-wrapper__header--profile">
+                    <img class="home-wrapper__header--profile-img" src="images/header/Image-profile.png" alt="">
+                    <div class="home-wrapper__header--profile-content">
+                        <span class="home-wrapper__header--profile-content-name">اسم المستخدم</span>
+                        <span class="home-wrapper__header--profile-content-code">كود المسوق</span>
+                    </div>
+                </div>
+            </header>
+            <main class="home-wrapper__main products-page">
+                <div class="home-wrapper__main-content justify-content-between align-items-center">
+                    <div class="home-wrapper__categories">
+                        <a href="#" class="home-wrapper__categories--item active">
+                            <div class="home-wrapper__categories--item-img">
+                                <img src="images/home-page/home-2.svg" alt="">
+                            </div>
+                            <span class="home-wrapper__categories--item-title">الرئيسية</span>
+                        </a>
+                        <a href="#" class="home-wrapper__categories--item">
+                            <div class="home-wrapper__categories--item-img">
+                                <img src="images/home-page/category.svg" alt="">
+                            </div>
+                            <span class="home-wrapper__categories--item-title">الأقسام</span>
+                        </a>
+                        <a href="#" class="home-wrapper__categories--item">
+                            <div class="home-wrapper__categories--item-img">
+                                <img src="images/home-page/truck-fast.svg" alt="">
+                            </div>
+                            <span class="home-wrapper__categories--item-title">التخزين و الشحن</span>
+                        </a>
+                        <a href="#" class="home-wrapper__categories--item">
+                            <div class="home-wrapper__categories--item-img">
+                                <img src="images/home-page/message-favorite.svg" alt="">
+                            </div>
+                            <span class="home-wrapper__categories--item-title">اقترح منتج لمخزون</span>
+                        </a>
+                    </div>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="fileInput" />
+                        <label for="fileInput" class="custom-button">رفع شيت طلبات</label>
+                    </div>
+                </div>
+                <div class="products-page__products">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-4">
+                            <div class="home-wrapper__product-item">
+                                <div class="home-wrapper__product-item-image-container">
+                                    <img class="home-wrapper__product-item-image" src="images/home-page/products/shoes.png" alt="watch">
+                                    <a href="#" class="home-wrapper__product-item-heart-link">
+                                        <img src="images/home-page/products/heart.svg" alt="heart">
+                                    </a>
+                                </div>
+                                <div class="home-wrapper__product-item-desc">
+                                    <span class="home-wrapper__product-item-title">ساعة حريمي لون فضي براق وتصميم عصري</span>
+                                    <div class="home-wrapper__product-item-price">
+                                        <div class="home-wrapper__product-item-price-item">
+                                            <span class="home-wrapper__product-item-price-item-title">السعر</span>
+                                            <span class="home-wrapper__product-item-price-item-price">40 درهم</span>
+                                        </div>
+                                        <div class="home-wrapper__product-item-profit-item">
+                                            <span class="home-wrapper__product-item-profit-item-title">الربح</span>
+                                            <span class="home-wrapper__product-item-profit-item-price">15 درهم</span>
+                                        </div>
+                                    </div>
+                                    <button class="home-wrapper__product-item-add-to-cart">أضف للعربة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="products-page-navigation" aria-label="Page navigation example">
+                    <div class="products-page__navigation-wrapper">
+                        <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <i class="fas fa-angle-left dropdown"></i>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <i class="fas fa-angle-right dropdown"></i>
+                              </a>
+                            </li>
+                          </ul>
+                    </div>
+                </nav>
+            </main>
+        </section>
+    </div>
+    <section class="footer">
+        <!-- <div class="container-fluid"> -->
+            <div class="footer__head">
+                <img src="images/home-page/footer/logo.svg" alt="logo">
+                <p class="footer__info">
+                    مخزون منصة التجارة الالكترونية الرائدة في السوق الاماراتي في مجال الدروب شيبنج حيث نوفر العديد من المنتجات باسعار مميزه وتنافسيه دون الحاجه الي راس مال بالاضافه الي الخدمات اللوجستيه الكاملة مثل الشحن والتخزين والمتابعه والتحصيل والاسترجاع مما يتيح لك التفرغ لادارة متجرك والحصول علي المزيد من المبيعات .
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="images/home-page/footer/x.svg" alt="">
+                    </a>
+                    <span class="footer__social-link-separator"></span>
+                    <a href="#" class="footer__social-link">
+                        <img src="images/home-page/footer/x.svg" alt="">
+                    </a>
+                    <span class="footer__social-link-separator"></span>
+                    <a href="#" class="footer__social-link">
+                        <img src="images/home-page/footer/x.svg" alt="">
+                    </a>
+                    <span class="footer__social-link-separator"></span>
+                    <a href="#" class="footer__social-link">
+                        <img src="images/home-page/footer/x.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__copyrights">
+                <span>جميع الحقوق محفوظة © 2023 </span>
+            </div>
+        <!-- </div> -->
+    </section>
+</body>
+
+ <!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <!-- Custom JS -->
+ <script src="js/main.js"></script>
+</html>
