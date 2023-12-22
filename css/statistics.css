@@ -1,0 +1,158 @@
+@import url('variables.css');
+
+.statistics-page__header-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.header-item_blue {
+    background: #44A6E9;
+}
+
+.header-item_green {
+    background: #15CAB8;
+}
+
+.header-item_orange {
+    background: #FF8548;
+}
+
+.statistics-page {
+    background-color: #F9F9F9;
+    padding: 20px 0px 50px
+}
+
+.statistics-page__body {
+    text-align: right;
+    display: flex;
+}
+
+.statistics-page__body-blue-area {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.statistics-page__body-red-area {
+    flex: 1;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.statistics-page__body-green-area {
+    text-align: center;
+    flex: 1;
+}
+
+/* group all areas in style  */
+.statistics-page__body-blue-area, 
+.statistics-page__body-red-area, 
+.statistics-page__body-green-area {
+ background-color: #fff;
+ border-radius: 20px;
+ padding: 15px;
+}
+
+.statistics-page__body-blue-area-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.statistics-page__body-blue-area-item:not(:last-child) {
+    margin-left: 10px;
+}
+
+.statistics-page__body-blue-area-value {
+    text-align: center;
+    /* font-size: 36px; */
+    font-weight: 700;
+    /* line-height: 49.997px; */
+}
+
+.statistics-page__body-blue-area-label {
+    font-weight: 700;
+}
+
+
+.statistics-page__body-area-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    border-radius: 16.666px;
+    padding: 12px 0;
+    font-weight: 700;
+}
+
+.statistics-page__body-blue-area-item {
+    background-color: #EBF7FF;
+    color: #084384;
+}
+
+.statistics-page__body-green-area-item {
+    background-color: #E7FEF3;
+    color: #6B6B6B;
+    margin-bottom: 10px;
+}
+
+.statistics-page__body-red-area-item {
+    background-color: #FEECE9;
+    color: #6B6B6B;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* media query */
+
+/* mobile screen */
+@media screen and (max-width: 620px) {
+    .statistics-page__header-item {
+        padding: 15px;
+    }
+
+    .statistics-page__body{
+        flex-direction: column;
+    }
+
+    .statistics-page__body-blue-area, .statistics-page__body-red-area {
+        margin-left: 0;
+    }
+
+    .statistics-page__body-red-area {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .home-wrapper__main.statistics-page {
+        padding: 0;
+    }
+}
+/* end mobile screen */
+
+
+/* medium screen */
+@media screen and (min-width: 960px) {
+    .statistics-page__header-item-label {
+        font-size: 18px;
+    }
+}
+/* end medium screen */
+
+
+/* large screen */
+@media screen and (min-width: 1200px) {
+    .statistics-page__header-item-label {
+        font-size: 20px;
+    }
+}
+/* end large screen */
+
+/*  */
+/* end media query */
