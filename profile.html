@@ -17,7 +17,7 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
     <!-- mobile screen -->
@@ -35,7 +35,7 @@
                     <a class="nav-link" href="#">احصائياتي</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="payment.html">حسابي</a>
+                    <a class="nav-link" href="profile.html">حسابي</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">المنتجات</a>
@@ -76,7 +76,7 @@
                 </a>
             </li>
             <li class="home-wrapper__menu--item">
-                <a href="payment.html" class="home-wrapper__menu--item--link">
+                <a href="profile.html" class="home-wrapper__menu--item--link">
                     <img src="images/sidebar/profile-circle.svg" alt="profile">
                     <span class="home-wrapper__menu-item-text">حسابي</span>
                 </a>
@@ -180,13 +180,13 @@
                     <div class="payments-page__header">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                              <a class="nav-link pr-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                              <a class="nav-link active pr-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                 <img src="images/payments/profile-circle.svg" alt="">
                                 <span>المعلومات الشخصية</span>
                               </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
                                 <img src="../images/payments/money-4.svg" alt="">
                                 <span>بيانات الدفع</span>
                               </a>
@@ -194,8 +194,94 @@
                         </ul>
                     </div>
                     <div class="tab-content payments-page__body" id="myTabContent">
-                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">1</div>
-                        <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form class="profile-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="name">الاسم الأول</label>
+                                          <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="lastName">اسم العائلة</label>
+                                          <input type="text" class="form-control" id="lastName">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="email">البريد الالكتروني</label>
+                                          <input type="email" class="form-control" id="email" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="phone">رقم الهاتف</label>
+                                          <input type="number" class="form-control" id="phone" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="whatsapp">رقم الواتس آب</label>
+                                          <input type="number" class="form-control" id="whatsapp" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="country">Example select</label>
+                                            <select class="form-control" id="country">
+                                              <option>الإمارات</option>
+                                              <option>مصر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                          <label for="address">العنوان</label>
+                                          <input type="text" class="form-control" id="address" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="image">الصورة</label>
+                                          <input type="file" class="form-control" id="image" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="uploaded-img">
+                                            placeholder
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="password">كلمة المرور</label>
+                                          <input type="password" class="form-control" id="password" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="repassword">تأكيد كلمة المرور</label>
+                                            <input type="password" class="form-control" id="repassword" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="submit-button__wrapper">
+                                    <button type="submit" class="btn btn-primary">حفظ التعديلات</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <h3 class="payment-methods-title">اختر وسيلة الدفع</h3>
                             <div class="payment-methods">
                                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
