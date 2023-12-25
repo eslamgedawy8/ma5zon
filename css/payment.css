@@ -1,0 +1,109 @@
+
+
+
+.payments-page .payments-page__header .nav-tabs {
+    direction: rtl;
+    padding-right: 0;
+}
+
+.payments-page .payments-page__header .nav-link {
+    color: #1a1616;
+    border: 0;
+}
+
+
+.payments-page .payments-page__header .nav-link.active {
+    border: 0;
+    border-bottom: 2px solid #F9A51A !important;
+    /* background-color: #09529F; */
+}
+
+.payments-page .payments-page__header .nav-item {
+    /* background-color: #09529F; */
+}
+
+.payments-page .payments-page__header .tab-content {
+    text-align: right;
+}
+
+.payments-page .payments-page__header .nav-link.active span {
+    color: #09529F;
+}
+
+.payments-page .payments-page__header .nav-link span {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.payments-page .nav-link.clicked img {
+    /* filter: brightness(0) invert(1); */
+}
+
+.payment-methods-title {
+    margin-top: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.payments-page__body {
+    text-align: right;
+}
+
+.payment-methods .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: #F9F9F9;
+    color: #1B1B1B;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    /* max-width: 160px; */
+    min-height: 146px;
+}
+
+.payment-methods .nav {
+    padding-right: 0;
+}
+
+.payment-methods .nav-link.active {
+    border: 2px solid #09529F;
+    background-color: #F9F9F9;
+    color: #1B1B1B;
+}
+
+.nav-link__title {
+    margin-top: 13px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 960px) {
+    .payment-methods .nav-link {
+        padding: 10px;
+        min-height: unset;
+        min-width: 130px;
+    }
+
+    .payment-methods .nav-link img {
+        width: 55px;
+        height: 45px
+    }
+}
+
+
+
+@media (min-width: 961px) and (max-width: 1700px) {
+    .payment-methods .nav-link {
+        /* padding: 10px; */
+        /* max-width: 125px; */
+        max-width: 160px;
+    }
+
+    .payment-methods .nav-link img {
+        width: 55px;
+        height: 45px
+    }
+}
