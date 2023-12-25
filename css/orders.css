@@ -1,10 +1,12 @@
 @import url('variables.css');
 
+main {
+  margin-bottom: 60px;
+}
 .nav-wrapper {
   padding: 35px 35px 0 43px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-
   background-color: #fff;
 }
 .nav-tabs {
@@ -74,12 +76,17 @@
 
 .filters {
   margin-bottom: 34px;
-
   .filter-row1 {
+    display: flex;
     margin-bottom: 29px;
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
   .filter-row2 {
+    display: flex;
+    flex-wrap: wrap;
     gap: 14px;
+    row-gap: 10px;
   }
   .form-control::placeholder {
     color: #6b6b6b;
@@ -90,6 +97,7 @@
   }
 
   .input-search {
+    width: 690px;
     margin-left: 14px;
     input {
       padding-right: 49px;
@@ -103,6 +111,7 @@
     }
   }
   .input-select {
+    width: 284px;
     margin-left: 23px;
   }
   .input-number {
@@ -123,14 +132,29 @@
   }
 }
 
+.replacement-filters {
+  background-color: #fff;
+  margin-right: 19px;
+
+  .input-search-replacement {
+    width: 1169px;
+    margin-left: 9px;
+  }
+}
+.filters-wrapper-replacement {
+  background-color: #fff;
+}
 /* table styles */
 .table-responsive {
   border-radius: 16px;
+  background-color: #fff;
   label {
     vertical-align: middle;
   }
 
+  /* orders badges */
   .custom-badge {
+    max-width: 97px;
     font-size: 0.875rem;
     text-align: center;
     font-weight: 700;
@@ -156,15 +180,39 @@
     background: #fffbf0;
   }
   .delivered-badge {
+    max-width: none;
     color: #15cab8;
     border: 1px solid #15cab8;
     background: #f4ffff;
   }
   .track-badge {
     padding: 5px 12px 5px 14px;
+    max-width: none;
     color: #084384;
     border: 1px solid #084384;
     background: var(--f-1-f-7-ff, #f1f7ff);
+  }
+
+  .text-pagination {
+    color: #6b6b6b;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .button-pagination {
+    color: #6b6b6b;
+    border-radius: 10px;
+    background: #ebf0ed;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    width: 40px;
+    height: 41px;
+  }
+  .button-pagination-selected {
+    color: #fff;
+    background: var(--084384, #084384);
   }
 }
 
@@ -172,6 +220,8 @@
   font-size: 0.75rem;
   color: #6b6b6b;
   font-weight: 700;
+  margin-bottom: 23px;
+  text-align: right;
 }
 /* custom styles */
 .btn-outline-secondary {
@@ -183,7 +233,6 @@
 }
 
 /* Custom CSS for the checkbox */
-
 .custom-checkbox {
   width: 36.075px;
   height: 36px;
@@ -196,6 +245,7 @@
 .custom-checkbox input {
   display: none;
 }
+
 .custom-checkbox-checkmark {
   position: absolute;
   top: 50%;
@@ -215,5 +265,22 @@
 @media screen and (max-width: 1340px) {
   html {
     font-size: 13px;
+  }
+
+  .stat img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .stat-num {
+    font-size: 2.1625rem;
+  }
+  .stat img {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner-section {
+    padding-inline: 15px;
   }
 }
