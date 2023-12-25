@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الطلبات</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- css -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/orders.css" />
+  </head>
+
+  <body>
+    <!-- mobile screen -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >الرئيسية <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">احصائياتي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">حسابي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">المنتجات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">الطلبات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">المحفظة و الفواتير</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">الإشعارات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">طلبات الدعم</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تسجيل الخروج</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <aside class="home-wrapper__sidebar">
+      <div class="home-wrapper__logo">
+        <img src="images/logo.svg" alt="ma5zon" />
+      </div>
+      <ul class="home-wrapper__menu">
+        <li class="home-wrapper__menu--item">
+          <a href="index.html" class="home-wrapper__menu--item--link active">
+            <img src="images/sidebar/home-2.svg" alt="home" />
+            <span class="home-wrapper__menu-item-text">الرئيسية</span>
+          </a>
+        </li>
+        <li class="home-wrapper__menu--item">
+          <a href="#" class="home-wrapper__menu--item--link">
+            <img src="images/sidebar/status-up.svg" alt="stats" />
+            <span class="home-wrapper__menu-item-text">احصائياتي</span>
+          </a>
+        </li>
+        <li class="home-wrapper__menu--item">
+          <a href="#" class="home-wrapper__menu--item--link">
+            <img src="images/sidebar/profile-circle.svg" alt="profile" />
+            <span class="home-wrapper__menu-item-text">حسابي</span>
+          </a>
+        </li>
+        <li class="home-wrapper__menu--item">
+          <a href="products.html" class="home-wrapper__menu--item--link">
+            <img src="images/sidebar/category.svg" alt="products" />
+            <span class="home-wrapper__menu-item-text">المنتجات</span>
+          </a>
+        </li>
+        <div class="home-wrapper__menu--item-dropdown item">
+          <a class="sub-btn">
+            <img src="images/sidebar/task.svg" alt="orders" />
+            <span class="sub-btn-title">الطلبات</span>
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a href="orders.html" class="sub-item">الطلبات</a>
+            <a href="#" class="sub-item">طلب الاستبدال</a>
+          </div>
+        </div>
+        <div class="home-wrapper__menu--item-dropdown item">
+          <a class="sub-btn">
+            <img src="images/sidebar/wallet.svg" alt="wallet" />
+            <span class="sub-btn-title">المحفظة و الفواتير</span>
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">رصيد الحساب</a>
+            <a href="#" class="sub-item">سحب جديد</a>
+            <a href="#" class="sub-item">مسحوباتي</a>
+          </div>
+        </div>
+        <li class="home-wrapper__menu--item">
+          <a href="#" class="home-wrapper__menu--item--link">
+            <img src="images/sidebar/notification.svg" alt="notification" />
+            <span class="home-wrapper__menu-item-text">الإشعارات</span>
+          </a>
+        </li>
+        <div class="home-wrapper__menu--item-dropdown item">
+          <a class="sub-btn">
+            <img src="images/sidebar/24-support.svg" alt="support" />
+            <span class="sub-btn-title">طلبات الدعم</span>
+            <i class="fas fa-angle-right dropdown"></i>
+          </a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">تذكرة جديدة</a>
+            <a href="#" class="sub-item">طلبات الدعم</a>
+          </div>
+        </div>
+        <li class="home-wrapper__menu--item logout">
+          <a href="#" class="home-wrapper__menu--item--link">
+            <img src="images/sidebar/logout.svg" alt="logout" />
+            <span class="home-wrapper__menu-item-text">تسجيل الخروج</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="home-wrapper">
+      <section class="home-wrapper__content">
+        <header class="home-wrapper__header justify-content-start">
+          <h1 class="home-wrapper__header--main ms-auto">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <span class="home-wrapper__header--main-title">الطلبات</span>
+          </h1>
+
+          <select
+            name="coutries"
+            id="coutries"
+            class="home-wrapper__header--coutries"
+          >
+            <option
+              value="الإمارات"
+              class="home-wrapper__header--coutries-item"
+            >
+              <img src="images/header/AE.svg" alt="" />
+              <span>الإمارات</span>
+            </option>
+            <option value="مصر" class="home-wrapper__header--coutries-item">
+              <img src="images/header/AE.svg" alt="" />
+              <span>مصر</span>
+            </option>
+          </select>
+          <div class="home-wrapper__header--actions">
+            <a href="" class="home-wrapper__header--likes">
+              <img src="images/header/heart.svg" alt="" />
+            </a>
+            <a href="" class="home-wrapper__header--notifications">
+              <img src="images/header/bell.png" alt="" />
+            </a>
+            <a href="" class="home-wrapper__header--cart">
+              <img src="images/header/cart.png" alt="" />
+            </a>
+          </div>
+          <div class="home-wrapper__header--profile">
+            <img
+              class="home-wrapper__header--profile-img"
+              src="images/header/Image-profile.png"
+              alt=""
+            />
+            <div class="home-wrapper__header--profile-content">
+              <span class="home-wrapper__header--profile-content-name"
+                >اسم المستخدم</span
+              >
+              <span class="home-wrapper__header--profile-content-code"
+                >كود المسوق</span
+              >
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <nav class="nav-wrapper">
+            <!-- tabs -->
+            <div id="nav-tab" class="nav-tabs" role="tablist">
+              <div class="home-wrapper__categories">
+                <button
+                  id="nav-orders-tab"
+                  class="home-wrapper__categories--item active border-0 bg-transparent"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-orders"
+                  type="button"
+                  role="tab"
+                >
+                  <div class="home-wrapper__categories--item-img">
+                    <img src="images/orders/profile-circle.svg" alt="" />
+                  </div>
+                  <span class="home-wrapper__categories--item-title"
+                    >الطلبات</span
+                  >
+                </button>
+                <button
+                  id="nav-replacement-tab"
+                  class="home-wrapper__categories--item border-0 bg-transparent"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-replacement"
+                  type="button"
+                  role="tab"
+                >
+                  <div class="home-wrapper__categories--item-img">
+                    <img src="images/orders/orders-replacement.svg" alt="" />
+                  </div>
+                  <span class="home-wrapper__categories--item-title"
+                    >طلبات الاستبدال</span
+                  >
+                </button>
+              </div>
+            </div>
+          </nav>
+          <!-- tabs content -->
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              id="nav-orders"
+              class="tab-pane fade show active"
+              role="tabpanel"
+              tabindex="0"
+            >
+              <section class="row flex-xl-nowrap banner-section gx-0">
+                <div class="col-sm-12 col-xl-6 order-stats orders-success">
+                  <h2 class="text-white fs-6 fw-bold">الطلبات</h2>
+                  <div class="stats-wrapper bg-white">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">60</p>
+                            <h3 class="stat-title">طلبات جديدة</h3>
+                          </div>
+                          <img src="./images/orders/square-list.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">70</p>
+                            <h3 class="stat-title">طلبات جاري التوصيل</h3>
+                          </div>
+                          <img src="./images/orders/loading.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">120</p>
+                            <h3 class="stat-title">طلبات تم توصيلها</h3>
+                          </div>
+                          <img src="./images/orders/delivered.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">2K</p>
+                            <h3 class="stat-title">كل الطلبات</h3>
+                          </div>
+                          <img src="./images/orders/square-list.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-6 order-stats orders-fail">
+                  <h2 class="text-white fs-6 fw-bold">الطلبات التى فشلت</h2>
+                  <div class="stats-wrapper bg-white">
+                    <div class="row align-items-center">
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">
+                              <img src="./images/orders/exchange.svg" alt="" />
+                              222
+                            </p>
+                            <h3 class="stat-title">
+                              طلبات لا يرد وجارى المتابعة
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">
+                              <img
+                                src="./images/orders/canceled-cart.svg"
+                                alt=""
+                              />
+                              160
+                            </p>
+                            <h3 class="stat-title">
+                              طلبات ملغية وجاري المتابعة
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">
+                              <img src="./images/orders/canceled.svg" alt="" />
+                              78
+                            </p>
+                            <h3 class="stat-title">طلبات ملغية</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="stat">
+                          <div>
+                            <p class="stat-num">
+                              <img src="./images/orders/repeated.svg" alt="" />
+                              2K
+                            </p>
+                            <h3 class="stat-title">طلبات مكررة</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="filters-section">
+                <div class="filters-wrapper">
+                  <form class="filters">
+                    <div class="filter-row1">
+                      <div class="input-search">
+                        <div class="input-group">
+                          <input
+                            type="search"
+                            class="form-control form-control-lg rounded-3"
+                            placeholder="بحث ف الطلبات ..."
+                          />
+                          <div class="input-group-append">
+                            <span>
+                              <img
+                                src="./images/orders/magnifying-glass.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="input-select">
+                        <select
+                          class="form-select form-select-lg"
+                          aria-label="Large select example"
+                        >
+                          <option selected>اختر المنتج</option>
+                          <option value="1">منتج 1</option>
+                          <option value="2">منتج 2</option>
+                          <option value="3">منتج 3</option>
+                        </select>
+                      </div>
+
+                      <div class="input-number">
+                        <label for="display-num">عرض</label>
+                        <input
+                          type="number"
+                          id="display-num"
+                          class="form-control form-control-lg"
+                          placeholder="50"
+                          style="width: 69px"
+                        />
+                        <label for="display-num">طلب</label>
+                      </div>
+
+                      <div class="ms-3">
+                        <button
+                          type="button"
+                          class="btn btn-lg btn-outline-secondary"
+                        >
+                          <img
+                            src="./images/orders/arrow-down-to-line.svg"
+                            alt=""
+                          />
+                          تصدير
+                        </button>
+                      </div>
+
+                      <div class="">
+                        <div>
+                          <input type="file" id="fileInput" class="d-none" />
+                          <label for="fileInput" class="yellow-button">
+                            <span>+</span> إضافة شيت طلبات
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter-row2">
+                      <div class="flex-grow-1">
+                        <input
+                          type="date"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="flex-grow-1">
+                        <input
+                          type="date"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="flex-grow-1">
+                        <select
+                          class="form-select form-select-lg"
+                          aria-label="Large select example"
+                        >
+                          <option selected>حالة الطلب</option>
+                          <option value="1">منتج 1</option>
+                          <option value="2">منتج 2</option>
+                          <option value="3">منتج 3</option>
+                        </select>
+                      </div>
+
+                      <div class="flex-grow-1">
+                        <select
+                          class="form-select form-select-lg"
+                          aria-label="Large select example"
+                        >
+                          <option selected>الإمارة</option>
+                          <option value="1">منتج 1</option>
+                          <option value="2">منتج 2</option>
+                          <option value="3">منتج 3</option>
+                        </select>
+                      </div>
+
+                      <div class="flex-grow-1">
+                        <select
+                          class="form-select form-select-lg"
+                          aria-label="Large select example"
+                        >
+                          <option selected>المنطقة</option>
+                          <option value="1">منتج 1</option>
+                          <option value="2">منتج 2</option>
+                          <option value="3">منتج 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+
+                  <!-- orders table -->
+                  <div class="table-responsive">
+                    <table class="table orders-table">
+                      <thead>
+                        <tr class="align-middle text-center text-nowrap">
+                          <th scope="col" class="align-middle">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <th scope="col">
+                            كود الطلب ID
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            عدد الطلب
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            الاسم
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            رقم الهاتف
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            الربح
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            اجمالى الطلب
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            المنتجات
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            الحالة
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            الامارة
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            التاريخ
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            آخر تحديث
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            خيارات
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="align-middle">
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge new-badge">جديد</div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge cancelled-badge">
+                              تم الالغاء
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge in-progress-badge">
+                              قيد التنفيذ
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم التوصيل
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم التوصيل
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم التوصيل
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم التوصيل
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم التوصيل
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>1</td>
+                          <td>محمد جمال الدين</td>
+                          <td>+961989745216</td>
+                          <td>520 درهم</td>
+                          <td>520 درهم</td>
+                          <td>1 قطاعة ثوم كهربائية صغيرة General</td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم التوصيل
+                            </div>
+                          </td>
+                          <td>دبي</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div
+                                class="d-flex justify-content-between align-items-center gap-2"
+                              >
+                                <a href="#">
+                                  <img src="./images/orders/eye.svg" alt="" />
+                                </a>
+                                <a href="#">
+                                  <img
+                                    src="./images/orders/messages.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <button class="custom-badge track-badge">
+                                تتبع الطلب
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div
+                      class="d-flex justify-content-between align-items-center px-2 bg-white mb-4"
+                    >
+                      <p class="text-pagination">عرض 8 من 24 نتيجة</p>
+                      <div class="d-flex gap-3">
+                        <button
+                          class="button-pagination button-pagination-selected"
+                        >
+                          1
+                        </button>
+                        <button class="button-pagination">2</button>
+                        <button class="button-pagination">3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div
+              id="nav-replacement"
+              class="tab-pane fade"
+              role="tabpanel"
+              tabindex="0"
+            >
+              <div class="filters-wrapper filters-wrapper-replacement">
+                <form class="filters replacement-filters">
+                  <div class="filter-row1">
+                    <div class="input-search input-search-replacement">
+                      <div class="input-group">
+                        <input
+                          type="search"
+                          class="form-control form-control-lg rounded-3"
+                          placeholder="بحث ف الطلبات ..."
+                        />
+                        <div class="input-group-append">
+                          <span>
+                            <img
+                              src="./images/orders/magnifying-glass.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-3">
+                      <button
+                        type="button"
+                        class="btn btn-lg btn-outline-secondary"
+                      >
+                        <img
+                          src="./images/orders/arrow-down-to-line.svg"
+                          alt=""
+                        />
+                        تصدير
+                      </button>
+                    </div>
+
+                    <div class="">
+                      <div>
+                        <input type="file" id="fileInput" class="d-none" />
+                        <label for="fileInput" class="yellow-button">
+                          <span>+</span> إضافة طلب استبدال
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <!-- orders table -->
+                <div class="table-responsive">
+                  <table class="table orders-table">
+                    <thead>
+                      <tr class="align-middle">
+                        <th scope="col" class="align-middle">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <th scope="col">
+                          الرقم التعريفي id
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                        <th scope="col">
+                          الاسم
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                        <th scope="col">
+                          رقم الهاتف
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                        <th scope="col">
+                          رقم الطلب
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                        <th scope="col">
+                          ملاحظات
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                        <th scope="col">
+                          الحالة
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                        <th scope="col">
+                          التاريخ
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                        <th scope="col">
+                          خيارات
+                          <span
+                            ><img
+                              src="./images/orders/arrows-up-down.svg"
+                              alt=""
+                          /></span>
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="align-middle">
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge new-badge">جديد</div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge cancelled-badge">
+                            تم الالغاء
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge in-progress-badge">
+                            قيد التنفيذ
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge in-progress-badge">
+                            قيد التنفيذ
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge in-progress-badge">
+                            قيد التنفيذ
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge in-progress-badge">
+                            قيد التنفيذ
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge in-progress-badge">
+                            قيد التنفيذ
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge in-progress-badge">
+                            قيد التنفيذ
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <label>
+                            <div class="custom-checkbox">
+                              <input type="checkbox" />
+                              <div class="custom-checkbox-checkmark"></div>
+                            </div>
+                          </label>
+                        </th>
+                        <td>#192528</td>
+                        <td>محمد جمال الدين</td>
+                        <td>+961989745216</td>
+                        <td>5448811</td>
+                        <td>ملاحظات</td>
+                        <td>
+                          <div class="custom-badge in-progress-badge">
+                            قيد التنفيذ
+                          </div>
+                        </td>
+
+                        <td>30/11/2023 11:30 Pm at</td>
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-2"
+                          >
+                            <button class="custom-badge track-badge">
+                              محادثة الطلب
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div
+                    class="d-flex justify-content-between align-items-center px-2 bg-white"
+                  >
+                    <p class="text-pagination">عرض 8 من 24 نتيجة</p>
+                    <div class="d-flex gap-3">
+                      <button
+                        class="button-pagination button-pagination-selected"
+                      >
+                        1
+                      </button>
+                      <button class="button-pagination">2</button>
+                      <button class="button-pagination">3</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__head">
+        <img src="images/home-page/footer/logo.svg" alt="logo" />
+        <p class="footer__info">
+          مخزون منصة التجارة الالكترونية الرائدة في السوق الاماراتي في مجال
+          الدروب شيبنج حيث نوفر العديد من المنتجات باسعار مميزه وتنافسيه دون
+          الحاجه الي راس مال بالاضافه الي الخدمات اللوجستيه الكاملة مثل الشحن
+          والتخزين والمتابعه والتحصيل والاسترجاع مما يتيح لك التفرغ لادارة متجرك
+          والحصول علي المزيد من المبيعات .
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <img src="images/home-page/footer/x.svg" alt="" />
+          </a>
+          <span class="footer__social-link-separator"></span>
+          <a href="#" class="footer__social-link">
+            <img src="images/home-page/footer/x.svg" alt="" />
+          </a>
+          <span class="footer__social-link-separator"></span>
+          <a href="#" class="footer__social-link">
+            <img src="images/home-page/footer/x.svg" alt="" />
+          </a>
+          <span class="footer__social-link-separator"></span>
+          <a href="#" class="footer__social-link">
+            <img src="images/home-page/footer/x.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyrights">
+        <span>جميع الحقوق محفوظة © 2023 </span>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    charset="utf-8"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+   <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+</html>
