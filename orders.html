@@ -262,103 +262,113 @@
               role="tabpanel"
               tabindex="0"
             >
-              <section class="row flex-xl-nowrap banner-section gx-0">
-                <div class="col-sm-12 col-xl-6 order-stats orders-success">
+              <section class="banner-section">
+                <div class="order-stats orders-success">
                   <h2 class="text-white fs-6 fw-bold">الطلبات</h2>
-                  <div class="stats-wrapper bg-white">
-                    <div class="row align-items-center">
-                      <div class="col-3">
+                  <div class="row stats-wrapper bg-white">
+                    <div class="d-flex align-items-center">
+                      <div class="col-3 p-0">
                         <div class="stat">
-                          <div>
-                            <p class="stat-num">60</p>
+                          <div class="px-2">
+                            <p class="stat-num">
+                              60
+                              <img
+                                src="./images/orders/square-list.svg"
+                                alt=""
+                              />
+                            </p>
                             <h3 class="stat-title">طلبات جديدة</h3>
                           </div>
-                          <img src="./images/orders/square-list.svg" alt="" />
                         </div>
                       </div>
-                      <div class="col-3">
+                      <div class="col-3 p-0">
                         <div class="stat">
-                          <div>
-                            <p class="stat-num">70</p>
+                          <div class="px-2">
+                            <p class="stat-num">
+                              70
+                              <img src="./images/orders/loading.svg" alt="" />
+                            </p>
                             <h3 class="stat-title">طلبات جاري التوصيل</h3>
                           </div>
-                          <img src="./images/orders/loading.svg" alt="" />
                         </div>
                       </div>
-                      <div class="col-3">
+                      <div class="col-3 p-0">
                         <div class="stat">
-                          <div>
-                            <p class="stat-num">120</p>
+                          <div class="px-2">
+                            <p class="stat-num">
+                              120
+                              <img src="./images/orders/delivered.svg" alt="" />
+                            </p>
                             <h3 class="stat-title">طلبات تم توصيلها</h3>
                           </div>
-                          <img src="./images/orders/delivered.svg" alt="" />
                         </div>
                       </div>
-                      <div class="col-3">
-                        <div class="stat">
-                          <div>
-                            <p class="stat-num">2K</p>
+                      <div class="col-3 p-0">
+                        <div class="stat border-0">
+                          <div class="px-2">
+                            <p class="stat-num">
+                              2K
+                              <img
+                                src="./images/orders/square-list.svg"
+                                alt=""
+                              />
+                            </p>
                             <h3 class="stat-title">كل الطلبات</h3>
                           </div>
-                          <img src="./images/orders/square-list.svg" alt="" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-sm-12 col-xl-6 order-stats orders-fail">
+                <div class="order-stats orders-fail">
                   <h2 class="text-white fs-6 fw-bold">الطلبات التى فشلت</h2>
-                  <div class="stats-wrapper bg-white">
-                    <div class="row align-items-center">
-                      <div class="col-3">
+                  <div class="row stats-wrapper bg-white">
+                    <div class="d-flex align-items-center">
+                      <div class="col-3 p-0">
                         <div class="stat">
-                          <div>
+                          <div class="px-2">
                             <p class="stat-num">
                               <img src="./images/orders/exchange.svg" alt="" />
-                              222
+                              60
                             </p>
-                            <h3 class="stat-title">
-                              طلبات لا يرد وجارى المتابعة
-                            </h3>
+                            <h3 class="stat-title">طلبات جديدة</h3>
                           </div>
                         </div>
                       </div>
-                      <div class="col-3">
+                      <div class="col-3 p-0">
                         <div class="stat">
-                          <div>
+                          <div class="px-2">
                             <p class="stat-num">
                               <img
                                 src="./images/orders/canceled-cart.svg"
                                 alt=""
                               />
-                              160
+                              70
                             </p>
-                            <h3 class="stat-title">
-                              طلبات ملغية وجاري المتابعة
-                            </h3>
+                            <h3 class="stat-title">طلبات جاري التوصيل</h3>
                           </div>
                         </div>
                       </div>
-                      <div class="col-3">
+                      <div class="col-3 p-0">
                         <div class="stat">
-                          <div>
+                          <div class="px-2">
                             <p class="stat-num">
                               <img src="./images/orders/canceled.svg" alt="" />
-                              78
+                              120
                             </p>
-                            <h3 class="stat-title">طلبات ملغية</h3>
+                            <h3 class="stat-title">طلبات تم توصيلها</h3>
                           </div>
                         </div>
                       </div>
-                      <div class="col-3">
-                        <div class="stat">
-                          <div>
+                      <div class="col-3 p-0">
+                        <div class="stat border-0">
+                          <div class="px-2">
                             <p class="stat-num">
                               <img src="./images/orders/repeated.svg" alt="" />
                               2K
                             </p>
-                            <h3 class="stat-title">طلبات مكررة</h3>
+                            <h3 class="stat-title">كل الطلبات</h3>
                           </div>
                         </div>
                       </div>
@@ -1455,7 +1465,7 @@
                     </tbody>
                   </table>
                   <div
-                    class="d-flex justify-content-between align-items-center px-2 bg-white"
+                    class="d-flex justify-content-between align-items-center px-2 bg-white mb-4"
                   >
                     <p class="text-pagination">عرض 8 من 24 نتيجة</p>
                     <div class="d-flex gap-3">

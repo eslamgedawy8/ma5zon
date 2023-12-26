@@ -17,22 +17,27 @@ main {
   cursor: pointer;
 }
 
+.banner-section {
+  display: flex;
+  padding-right: 35px;
+  padding-left: 43px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  gap: 12px;
+  text-align: right;
+}
+
 .order-stats {
-  padding-inline: 23px;
+  flex: 1;
+  padding-inline: 33px;
   padding-top: 24px;
   padding-bottom: 29px;
   border-radius: 19.596px;
   backdrop-filter: blur(66.5849609375px);
 }
-
-.banner-section {
-  padding-right: 35px;
-  padding-left: 43px;
-  background-color: #fff;
-  gap: 12px;
-}
 .stats-wrapper {
-  padding-block: 15px;
+  height: 97.981px;
+
   border-radius: 15.7px;
 
   .stat {
@@ -43,8 +48,11 @@ main {
     padding: 0;
     text-align: left;
     border-left: 2px solid #ebf0ed;
-
+    text-align: center;
+    text-wrap: nowrap;
     .stat-num {
+      display: flex;
+      gap: 15px;
       text-align: center;
       font-weight: 800;
       font-size: 2.5625rem;
@@ -163,6 +171,7 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    text-wrap: nowrap;
   }
   .new-badge {
     color: #44a6e9;
@@ -262,25 +271,38 @@ main {
 }
 
 /* media queries */
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1380px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
-
-  .stat img {
-    display: none;
+  .banner-section {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
-  .stat-num {
+  .banner-section .order-stats .stat {
+    text-wrap: pretty;
+  }
+  .order-stats .stat .stat-num {
+    gap: 8px;
     font-size: 2.1625rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .order-stats .stat .stat-num {
+    display: block;
+    font-size: 2rem;
+  }
+  .order-stats .stat .stat-title {
+    font-size: 0.6349rem;
+  }
+  .filters-wrapper {
+    border: none;
+  }
+  .banner-section {
+    padding-inline: 15px;
   }
   .stat img {
     display: none;
-  }
-}
-@media screen and (max-width: 500px) {
-  .banner-section {
-    padding-inline: 15px;
   }
 }
