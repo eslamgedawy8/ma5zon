@@ -155,21 +155,21 @@ main {
   .input-add-sheet {
     width: 20%;
   }
-  .yellow-button {
-    font-size: 0.9375rem;
-    font-weight: 700;
-    width: 159px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--yellow-color);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-  }
+}
+.yellow-button {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  width: 159px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
 }
 
 .replacement-filters {
@@ -302,6 +302,27 @@ main {
   display: block;
 }
 
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+  margin-top: 45px;
+
+  img {
+    max-width: 339px;
+    height: 314px;
+    margin-bottom: 50px;
+  }
+  .empty-state-text {
+    color: #000;
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+}
 /* media queries */
 @media screen and (max-width: 1380px) {
   html {

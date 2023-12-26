@@ -1089,11 +1089,11 @@
                       </button>
                     </div>
 
-                    <div class="">
+                    <div>
                       <div>
-                        <input type="file" id="fileInput" class="d-none" />
+                        <input type="button" id="fileInput" class="d-none" />
                         <label for="fileInput" class="yellow-button">
-                          <span>+</span> إضافة طلب استبدال
+                          <span class="ml-1 fs-4"> + </span> إضافة شيت طلبات
                         </label>
                       </div>
                     </div>
@@ -1104,7 +1104,7 @@
                 <div class="table-responsive">
                   <table class="table orders-table">
                     <thead>
-                      <tr class="align-middle">
+                      <tr class="align-middle text-nowrap">
                         <th scope="col" class="align-middle">
                           <label>
                             <div class="custom-checkbox">
@@ -1473,6 +1473,20 @@
                       <button class="button-pagination">2</button>
                       <button class="button-pagination">3</button>
                     </div>
+                  </div>
+                </div>
+
+                <!-- empty state -->
+                <div class="empty-state d-none">
+                  <img src="images/orders/empty.png" alt="" />
+                  <p class="empty-state-text">
+                    لا يوجد طلبات استبدال. من فضلك قم بإضافة طلب استبدال جديد من
+                    خلال هذا الزر
+                  </p>
+                  <div class="">
+                    <button class="yellow-button" style="width: 221px">
+                      <span class="ml-1 fs-4"> + </span> إضافة شيت طلبات
+                    </button>
                   </div>
                 </div>
               </div>
