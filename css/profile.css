@@ -111,11 +111,13 @@
     width: 100%;
     background-color: #F9A51A;
     border-color: #F9A51A;
+    color: #fff;
 }
 
-.profile-form .submit-button__wrapper button:active {
-    background-color: #F9A51A !important;
-    border-color: #F9A51A !important;
+.shared-form .submit-button__wrapper button {
+    background: #09529F;
+    border-color: #09529F;
+    color: #fff;
 }
 
 
