@@ -32,7 +32,7 @@
                     <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">احصائياتي</a>
+                    <a class="nav-link" href="statistics.html">احصائياتي</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="profile.html">حسابي</a>
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li class="home-wrapper__menu--item">
-                <a href="#" class="home-wrapper__menu--item--link">
+                <a href="statistics.html" class="home-wrapper__menu--item--link">
                     <img src="images/sidebar/status-up.svg" alt="stats">
                     <span class="home-wrapper__menu-item-text">احصائياتي</span>
                 </a>
@@ -277,7 +277,7 @@
                                     </div>
                                 </div>
                                 <div class="submit-button__wrapper">
-                                    <button type="submit" class="btn btn-primary">حفظ التعديلات</button>
+                                    <button type="submit" class="btn">حفظ التعديلات</button>
                                 </div>
                             </form>
                         </div>
@@ -329,13 +329,191 @@
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show" id="link1" role="tabpanel" aria-labelledby="link1-tab">1</div>
-                                    <div class="tab-pane fade" id="link2" role="tabpanel" aria-labelledby="link2-tab">2</div>
-                                    <div class="tab-pane fade" id="link3" role="tabpanel" aria-labelledby="link3-tab">3</div>
-                                    <div class="tab-pane fade" id="link4" role="tabpanel" aria-labelledby="link4-tab">4</div>
-                                    <div class="tab-pane fade" id="link5" role="tabpanel" aria-labelledby="link5-tab">5</div>
-                                    <div class="tab-pane fade" id="link6" role="tabpanel" aria-labelledby="link6-tab">6</div>
-                                    <div class="tab-pane fade" id="link7" role="tabpanel" aria-labelledby="link7-tab">7</div>
+                                    <div class="tab-pane fade show" id="link1" role="tabpanel" aria-labelledby="link1-tab">
+                                        <form class="profile-form shared-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="account">رقم الحساب</label>
+                                                      <input type="number" class="form-control" id="account">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="IBAN">رقم IBAN</label>
+                                                      <input type="text" class="form-control" id="IBAN">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="name">الاسم</label>
+                                                      <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="bankName">اسم البنك</label>
+                                                      <input type="text" class="form-control" id="bankName">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button__wrapper">
+                                                <button type="submit" class="btn">حفظ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="link2" role="tabpanel" aria-labelledby="link2-tab">
+                                        <form class="profile-form shared-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="mobileNumber">رقم الموبايل</label>
+                                                      <input type="number" class="form-control" id="mobileNumber">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="walletName">اسم صاحب المحفظة</label>
+                                                      <input type="text" class="form-control" id="walletName">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button__wrapper">
+                                                <button type="submit" class="btn">حفظ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="link3" role="tabpanel" aria-labelledby="link3-tab">
+                                        <form class="profile-form shared-form">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                      <label for="visaNumber">رقم الفيزا</label>
+                                                      <input type="number" class="form-control" id="visaNumber">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button__wrapper">
+                                                <button type="submit" class="btn">حفظ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="link4" role="tabpanel" aria-labelledby="link4-tab">
+                                        <form class="profile-form shared-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="name">الاسم عربي</label>
+                                                      <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="name">الاسم الإنجليزي</label>
+                                                      <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="country">الدولة</label>
+                                                      <input type="text" class="form-control" id="country">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button__wrapper">
+                                                <button type="submit" class="btn">حفظ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="link5" role="tabpanel" aria-labelledby="link5-tab">
+                                        <form class="profile-form shared-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="name">الاسم</label>
+                                                      <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="email">البريد الالكتروني</label>
+                                                      <input type="text" class="form-control" id="email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button__wrapper">
+                                                <button type="submit" class="btn">حفظ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="link6" role="tabpanel" aria-labelledby="link6-tab">
+                                        <form class="profile-form shared-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="name">الاسم</label>
+                                                      <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="number">رقم الحساب</label>
+                                                      <input type="number" class="form-control" id="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="email">الايميل</label>
+                                                      <input type="email" class="form-control" id="email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button__wrapper">
+                                                <button type="submit" class="btn">حفظ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="link7" role="tabpanel" aria-labelledby="link7-tab">
+                                        <form class="profile-form shared-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="name">الاسم</label>
+                                                      <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="country">الدولة</label>
+                                                      <input type="text" class="form-control" id="country">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="currency">عملة الحساب</label>
+                                                      <input type="text" class="form-control" id="currency">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label for="number">رقم الحساب</label>
+                                                      <input type="number" class="form-control" id="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button__wrapper">
+                                                <button type="submit" class="btn">حفظ</button>
+                                            </div>
+                                        </form>
+                                    </div>
 
                                 </div>
                             </div>
