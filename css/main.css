@@ -476,6 +476,7 @@ a:hover {
   .home-wrapper__product-item {
     border-radius: 16px;
     border: 1px solid #EBF0ED;
+    display: block;
   }
 
   .home-wrapper__product-item-image-container {
