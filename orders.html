@@ -418,16 +418,12 @@
                           id="display-num"
                           class="form-control form-control-lg"
                           placeholder="50"
-                          style="width: 69px"
                         />
                         <label for="display-num">طلب</label>
                       </div>
 
-                      <div class="ms-3">
-                        <button
-                          type="button"
-                          class="btn btn-lg btn-outline-secondary"
-                        >
+                      <div class="ms-3 input-export">
+                        <button type="button" class="export-btn">
                           <img
                             src="./images/orders/arrow-down-to-line.svg"
                             alt=""
@@ -436,13 +432,10 @@
                         </button>
                       </div>
 
-                      <div class="">
-                        <div>
-                          <input type="file" id="fileInput" class="d-none" />
-                          <label for="fileInput" class="yellow-button">
-                            <span>+</span> إضافة شيت طلبات
-                          </label>
-                        </div>
+                      <div class="input-add-sheet">
+                        <button class="yellow-button">
+                          <span class="ml-1 fs-4"> + </span> إضافة شيت طلبات
+                        </button>
                       </div>
                     </div>
 
@@ -1080,11 +1073,8 @@
                       </div>
                     </div>
 
-                    <div class="ml-3">
-                      <button
-                        type="button"
-                        class="btn btn-lg btn-outline-secondary"
-                      >
+                    <div class="ms-3 input-export">
+                      <button type="button" class="export-btn">
                         <img
                           src="./images/orders/arrow-down-to-line.svg"
                           alt=""
@@ -1093,22 +1083,19 @@
                       </button>
                     </div>
 
-                    <div class="">
-                      <div>
-                        <input type="file" id="fileInput" class="d-none" />
-                        <label for="fileInput" class="yellow-button">
-                          <span>+</span> إضافة طلب استبدال
-                        </label>
-                      </div>
+                    <div>
+                      <button class="yellow-button">
+                        <span class="ml-1 fs-4"> + </span> إضافة شيت طلبات
+                      </button>
                     </div>
                   </div>
                 </form>
 
                 <!-- orders table -->
-                <div class="table-responsive">
+                <div class="table-responsive replacement-table">
                   <table class="table orders-table">
                     <thead>
-                      <tr class="align-middle">
+                      <tr class="align-middle text-nowrap">
                         <th scope="col" class="align-middle">
                           <label>
                             <div class="custom-checkbox">
@@ -1479,6 +1466,20 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- empty state -->
+                <div class="empty-state d-none">
+                  <img src="images/orders/empty.png" alt="" />
+                  <p class="empty-state-text">
+                    لا يوجد طلبات استبدال. من فضلك قم بإضافة طلب استبدال جديد من
+                    خلال هذا الزر
+                  </p>
+                  <div>
+                    <button class="yellow-button" style="width: 221px">
+                      <span class="ml-1 fs-4"> + </span> إضافة شيت طلبات
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1534,8 +1535,8 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
-   <!-- Swiper JS -->
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="js/main.js"></script>
 </html>
