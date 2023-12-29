@@ -197,3 +197,15 @@
 .product-description__footer {
     margin-top: 30px;
 }
+
+@media screen and (max-width: 620px) {
+    .product-description__body-price {
+        flex-direction: column;
+    }
+
+    .product-description__body-price-item {
+        padding: 0;
+        margin-bottom: 16px;
+        border-left: unset;
+    }
+}
