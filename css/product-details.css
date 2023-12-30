@@ -145,6 +145,13 @@
     height: 40px;
     min-width: 150px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+
+.product-description__order-action:hover {
+    color: #fff;
 }
 
 
