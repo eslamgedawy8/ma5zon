@@ -1,0 +1,16 @@
+.cart-page {
+    .client-data {
+        padding: 0;
+        .checkout-title {
+            padding: 0;
+            text-align: right;
+            margin-bottom: 25px;
+        }
+        select {
+            border-radius: 4px;
+            border: 1px solid #ebf0ed;
+            background: #fafafa;
+            margin-bottom: 35px;
+        }
+    }
+}
