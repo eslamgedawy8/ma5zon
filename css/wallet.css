@@ -1,0 +1,140 @@
+main {
+  text-align: right;
+  background: transparent !important;
+  p {
+    margin-bottom: 0;
+  }
+}
+.payments-page__header .nav-link.active {
+  border: 0;
+  border-bottom: 2px solid #f9a51a !important;
+}
+.payments-page__header .nav-tabs {
+  direction: rtl;
+  padding-right: 0;
+}
+.payments-page__header .nav-link {
+  color: #1a1616;
+  border: 0;
+  background: transparent !important;
+}
+.payments-page__header .nav-link.active span {
+  color: #09529f;
+}
+.payments-page__header .nav-link span {
+  margin-right: 8px;
+  font-size: 1.25rem;
+}
+
+.banners-wrapper {
+  display: flex;
+  gap: 17px;
+}
+.banner {
+  border-radius: 0.9375rem;
+  padding-top: 1.1875rem;
+  padding-right: 1.75rem;
+  padding-bottom: 1.6875rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex: 1;
+  span {
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+}
+
+.banner-blue {
+  background: #44a6e9;
+}
+.banner-pink {
+  background: #ec7c90;
+}
+.banner-green {
+  background: #15cab8;
+}
+.banner-orange {
+  background: #ff8548;
+}
+
+.notice {
+  margin-top: 13px;
+  margin-bottom: 27px;
+  border-radius: 16.666px;
+  border: 1px solid #44a6e9;
+  background: #f1f7ff;
+  padding: 1.2rem;
+  h2 {
+    color: #084384;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 700;
+  }
+}
+
+.filters-wrapper {
+  padding-top: 38px;
+  border-radius: 20px;
+  input {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ebf0ed;
+    max-width: 969px;
+    margin-left: auto;
+  }
+  input[type='search']::placeholder {
+    color: #6b6b6b;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .filter-row1 {
+    justify-content: space-between;
+  }
+}
+.filters .input-group-append span {
+  top: 17px;
+}
+label {
+  margin-bottom: 0;
+}
+.replacement-table .orders-table td {
+  vertical-align: middle;
+}
+
+.text-highlight {
+  color: #15cab8;
+  font-weight: 700;
+}
+.delivered-badge {
+  max-width: 97px !important;
+  padding: 5px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex: 1;
+    padding-left: 0.8rem;
+    text-wrap: nowrap;
+  }
+  .banners-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+}
