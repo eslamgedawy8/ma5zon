@@ -218,7 +218,7 @@
         <main class="home-wrapper__main">
           <div class="">
             <div class="payments-page__header">
-              <ul class="nav nav-tabs pr-0" id="myTab" role="tablist">
+              <ul class="nav nav-tabs p-0" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a
                     class="nav-link active pr-0"
@@ -250,11 +250,11 @@
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    id="old-withdraw-tab"
+                    id="my-withdrawal-tab"
                     data-toggle="tab"
-                    href="#old-withdraw"
+                    href="#my-withdrawal"
                     role="tab"
-                    aria-controls="old-withdraw"
+                    aria-controls="my-withdrawal"
                     aria-selected="false"
                   >
                     <span>مسحوباتي</span>
@@ -590,23 +590,391 @@
                   </div>
                 </div>
               </div>
-
+              <!-- tab2 -->
               <div
                 class="tab-pane fade"
                 id="new-withdraw"
                 role="tabpanel"
                 aria-labelledby="new-withdraw-tab"
               >
-                <h3 class="payment-methods-title">اختر وسيلة الدفع</h3>
+                asdasda
               </div>
-
+              <!-- tab3 -->
               <div
                 class="tab-pane fade"
-                id="old-withdraw"
+                id="my-withdrawal"
                 role="tabpanel"
-                aria-labelledby="old-withdraw-tab"
+                aria-labelledby="my-withdrawal-tab"
               >
-                <h3 class="payment-methods-title">اختر وسيلة asdsa</h3>
+                <div class="filters-wrapper filters-wrapper-replacement mt-4">
+                  <form class="filters replacement-filters">
+                    <div class="filter-row1">
+                      <div class="input-search input-search-replacement">
+                        <div class="input-group">
+                          <input
+                            type="search"
+                            class="form-control form-control-lg"
+                            placeholder="بحث المسحوبات ..."
+                          />
+                          <div class="input-group-append">
+                            <span>
+                              <img
+                                src="./images/orders/magnifying-glass.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="buttons-wrapper">
+                        <button type="button" class="custom-btn withdrawal-btn">
+                          طلب سحب جديد
+                        </button>
+
+                        <button type="button" class="custom-btn export-btn">
+                          <img
+                            src="./images/orders/arrow-down-to-line.svg"
+                            alt=""
+                          />
+                          تصدير
+                        </button>
+
+                        <button type="button" class="custom-btn print-button">
+                          <img src="./images/wallet/printer.svg" alt="" />
+                          تصدير
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div class="table-responsive replacement-table">
+                    <table class="table orders-table">
+                      <thead>
+                        <tr class="align-middle text-nowrap">
+                          <th scope="col" class="align-middle">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <th scope="col">
+                            الرقم التعريفي id
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            نوع الدفع
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            رقم الحساب
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            الرصيد
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            اثبات الدفع
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                          <th scope="col">
+                            الحالة
+                            <span
+                              ><img
+                                src="./images/orders/arrows-up-down.svg"
+                                alt=""
+                            /></span>
+                          </th>
+                        </tr>
+                      </thead>
+
+                      <tbody class="align-middle">
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label>
+                              <div class="custom-checkbox">
+                                <input type="checkbox" />
+                                <div class="custom-checkbox-checkmark"></div>
+                              </div>
+                            </label>
+                          </th>
+                          <td>#192528</td>
+                          <td>520 درهم</td>
+                          <td>١٢٣٤٥٦٧٨٩</td>
+
+                          <td>30/11/2023 11:30 Pm at</td>
+                          <td>
+                            <img
+                              class="table-img"
+                              src="./images/wallet/Rectangle 30104.png"
+                              alt=""
+                            />
+                          </td>
+                          <td>
+                            <div class="custom-badge delivered-badge">
+                              تم الدفع
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div
+                      class="d-flex justify-content-between align-items-center px-2 bg-white mb-4"
+                    >
+                      <p class="text-pagination pl-5 text-nowrap">
+                        عرض 8 من 24 نتيجة
+                      </p>
+                      <div class="d-flex">
+                        <button
+                          class="button-pagination button-pagination-selected ml-2"
+                        >
+                          1
+                        </button>
+                        <button class="button-pagination ml-2">2</button>
+                        <button class="button-pagination ml-2">3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
