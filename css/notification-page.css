@@ -54,6 +54,61 @@ main.home-wrapper__main {
   top: 5%;
 }
 
+.home-wrapper__header--notifications {
+  position: relative;
+}
+
+.notification-menu {
+  position: absolute;
+  text-wrap: nowrap;
+  text-align: right;
+  border-radius: 20px;
+  background: #fff;
+  padding: 34px 60px;
+  z-index: 1000;
+  top: 32px;
+  right: -224px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  .notification-item {
+    position: relative;
+    border-bottom: 1px solid #d8d8d8;
+    padding-block: 24px;
+  }
+  h2 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .text-black {
+    color: #000;
+    font-weight: bold;
+  }
+  .text-blue {
+    color: #084384;
+    font-weight: bold;
+  }
+
+  span img {
+    width: 20px;
+    position: absolute;
+    right: -40px;
+    top: 28px;
+  }
+  .all-notification {
+    border-radius: 10px;
+    background: #09529f;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    width: 400px;
+    height: 48px;
+    border: none;
+    margin-top: 25px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .timeline-ma5zon {
     .ellipsis {
