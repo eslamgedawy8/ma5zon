@@ -15,7 +15,7 @@ main {
 }
 .payments-page__header .nav-link {
   color: #1a1616;
-  border: 0;
+  border-bottom: 2px solid #d6d6d6;
   background: transparent !important;
 }
 .payments-page__header .nav-link.active span {
@@ -26,6 +26,7 @@ main {
   font-size: 1.25rem;
 }
 
+/* balance-tab */
 .banners-wrapper {
   display: flex;
   gap: 17px;
@@ -116,6 +117,91 @@ label {
   padding: 5px !important;
 }
 
+/* new-withdraw-tab */
+.form-wrapper {
+  margin-top: 25px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 41px 34px 81px 20px;
+  display: flex;
+  flex-direction: column;
+  select,
+  input {
+    border-radius: 4px;
+    border: 1px solid #ebf0ed;
+    background: #fafafa;
+  }
+  label {
+    margin-bottom: 9px;
+    color: #1b1b1b;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .yellow-btn {
+    margin-top: 2.5rem;
+    border-radius: 10px;
+    width: 34.5625rem;
+    height: 3.125rem;
+    background: #f9a51a;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    border: none;
+    align-self: center;
+  }
+}
+
+/* my-withdrawal-tab*/
+.buttons-wrapper {
+  display: flex;
+  gap: 14px;
+}
+.custom-btn {
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-wrap: nowrap;
+  font-size: 0.9375rem;
+  font-family: Manrope;
+}
+.export-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 5.125rem;
+  border: 1px solid var(--Light-Accent-Solid, #ebf0ed);
+  background: var(--Accent-Border-Fill, #fafafa);
+  color: #036666;
+}
+
+.withdrawal-btn {
+  border: 1px solid #084384;
+  background: var(--Accent-Border-Fill, #fafafa);
+  color: #084384;
+  width: 9.8125rem;
+}
+
+.print-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem;
+  width: 8rem;
+  border-radius: 10px;
+  background: #f9a51a;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  img {
+    width: 1.5rem;
+  }
+}
+
+.table-img {
+  width: 4.3125rem;
+}
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px;
@@ -136,5 +222,14 @@ label {
 @media screen and (max-width: 576px) {
   html {
     font-size: 10px;
+  }
+  .buttons-wrapper {
+    flex-wrap: wrap;
+  }
+  .custom-btn {
+    height: 40px !important;
+  }
+  .form-wrapper .yellow-btn {
+    width: 80%;
   }
 }
