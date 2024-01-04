@@ -3,6 +3,9 @@ main.home-wrapper__main {
   border-radius: 20px;
   margin-bottom: 3.75rem;
 }
+.navbar-nav {
+  font-size: 16px;
+}
 .nav-tabs .nav-item {
   border-bottom: 1px solid #d6d6d6;
 }
@@ -64,7 +67,7 @@ main.home-wrapper__main {
   text-align: right;
   border-radius: 20px;
   background: #fff;
-  padding: 34px 60px;
+  padding: 1.25rem 1.4375rem;
   z-index: 1000;
   top: 32px;
   right: -224px;
@@ -72,7 +75,8 @@ main.home-wrapper__main {
   .notification-item {
     position: relative;
     border-bottom: 1px solid #d8d8d8;
-    padding-block: 24px;
+    padding-block: 12px;
+    margin-right: 30px;
   }
   h2 {
     color: #000;
@@ -90,10 +94,10 @@ main.home-wrapper__main {
   }
 
   span img {
-    width: 20px;
+    width: 15px;
     position: absolute;
-    right: -40px;
-    top: 28px;
+    right: -31px;
+    top: 14px;
   }
   .all-notification {
     border-radius: 10px;
@@ -102,7 +106,7 @@ main.home-wrapper__main {
     text-align: center;
     font-size: 15px;
     font-weight: 700;
-    width: 400px;
+    width: 18.75rem;
     height: 48px;
     border: none;
     margin-top: 25px;
