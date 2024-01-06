@@ -1,0 +1,85 @@
+.support-orders {
+    .tab-content {
+        background-color: #fff;
+    }
+
+    .filters-wrapper {
+        border: unset;
+    }
+
+    .table-responsive {
+        border: 1px solid #ebf0ed;
+        padding-inline: 0px;
+    }
+
+    .table thead th {
+        border-top: unset;
+        border-bottom: unset
+    }
+
+    .filters {
+        .input-search {
+            flex: 1;
+            min-width: 200px;
+            .form-control {
+                border: 1px solid #ebf0ed;
+            }
+        }
+
+        .export-btn, .yellow-button {
+            /* height: 42px; */
+        }
+
+        .input-export, .input-add-sheet {
+            width: unset;
+        }
+
+    }
+
+    .green-badge {
+        border: 1px solid #15CAB8;
+        background: #F4FFFF;
+        color: #15CAB8;
+        padding: 5px 16px;
+        width: fit-content;
+        max-width: unset;
+    }
+
+    .yellow-badge {
+        border: 1px solid #FEC600;
+        background: #FFFBF0;
+        color: #FEC600;
+        padding: 5px 16px;
+        width: fit-content;
+        max-width: unset;
+    }
+}
+
+.new-ticket-form {
+    padding: 0 30px 50px;
+    text-align: right;
+
+    .form-control {
+        border: 1px solid #EBF0ED;
+        background: #FAFAFA;
+    }
+
+    .submit-button__wrapper{
+        width: 553px;
+        margin: 16px auto;
+    }
+
+    .submit-button__wrapper button {
+        background: #09529F;
+        border-color: #09529F;
+        color: #fff;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .submit-button__wrapper {
+        width: unset !important;
+    }
+}
