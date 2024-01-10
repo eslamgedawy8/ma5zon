@@ -287,6 +287,10 @@ a:hover {
     margin-left: 8px;
 }
 
+.home-wrapper__header--main img {
+    margin-left: 8px;
+}
+
 .home-wrapper__header--main-title {
     font-size: 32px;
     color: var(--black-color);
@@ -391,7 +395,7 @@ a:hover {
 
 .home-wrapper__categories{
     display: flex;
-    border-bottom: 1px solid #D2D2D2;
+    border-bottom: 2px solid #D2D2D2;
     width: fit-content;
     padding-bottom: 8px;
     text-align: right;
@@ -415,7 +419,7 @@ a:hover {
     width: 100%;
     background-color: var(--yellow-color);
     position: absolute;
-    bottom: -8px;
+    bottom: -10px;
 }
 
 .home-wrapper__categories--item:not(:first-child) {
