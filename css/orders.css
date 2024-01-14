@@ -37,7 +37,6 @@ main {
 }
 .stats-wrapper {
   height: 97.981px;
-
   border-radius: 15.7px;
 
   .stat {
@@ -52,6 +51,7 @@ main {
     text-wrap: nowrap;
     .stat-num {
       display: flex;
+      align-self: center;
       gap: 15px;
       text-align: center;
       font-weight: 800;
@@ -69,6 +69,9 @@ main {
 }
 .orders-success {
   background: #15cab8;
+  img {
+    margin-bottom: 16px;
+  }
 }
 .orders-fail {
   background: #44a6e9;
@@ -123,12 +126,12 @@ main {
   }
   .input-number {
     height: 50px;
-    width: 17%;
+    width: 14%;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-left: 29px;
-    input {
+    select {
       width: 69px;
     }
   }
@@ -266,7 +269,7 @@ main {
 }
 
 .orders-table {
-  font-size: 0.75rem;
+  font-size: 0.975rem;
   color: #6b6b6b;
   font-weight: 700;
   margin-bottom: 23px;
@@ -341,6 +344,10 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
+  .banner-section {
+    padding-right: 32px;
+    padding-left: 23px;
+  }
   .empty-state {
     img {
       max-width: 280px;
