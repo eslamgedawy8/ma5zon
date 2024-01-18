@@ -257,51 +257,53 @@
                     <div class="d-flex align-items-center">
                       <div class="col-3 p-0">
                         <div class="stat">
-                          <div class="px-2">
-                            <p class="stat-num">
-                              60
-                              <img
-                                src="./images/orders/square-list.svg"
-                                alt=""
-                              />
-                            </p>
-                            <h3 class="stat-title">طلبات جديدة</h3>
+                          <div class="px-2 d-flex gap-2">
+                            <div class="d-flex flex-column">
+                              <p class="stat-num">60</p>
+                              <h3 class="stat-title">طلبات جديدة</h3>
+                            </div>
+                            <img src="./images/orders/square-list.svg" alt="" />
                           </div>
                         </div>
                       </div>
                       <div class="col-3 p-0">
                         <div class="stat">
-                          <div class="px-2">
-                            <p class="stat-num">
-                              70
-                              <img src="./images/orders/loading.svg" alt="" />
-                            </p>
-                            <h3 class="stat-title">طلبات جاري التوصيل</h3>
+                          <div class="px-2 d-flex">
+                            <div class="d-flex flex-column">
+                              <p class="stat-num">70</p>
+                              <h3 class="stat-title">طلبات جاري التوصيل</h3>
+                            </div>
+                            <img
+                              class="stat-img"
+                              src="./images/orders/loading.svg"
+                              alt=""
+                            />
                           </div>
                         </div>
                       </div>
                       <div class="col-3 p-0">
                         <div class="stat">
-                          <div class="px-2">
-                            <p class="stat-num">
-                              120
-                              <img src="./images/orders/delivered.svg" alt="" />
-                            </p>
-                            <h3 class="stat-title">طلبات تم توصيلها</h3>
+                          <div class="px-2 d-flex gap-2">
+                            <div class="d-flex flex-column">
+                              <p class="stat-num pl-1">120</p>
+                              <h3 class="stat-title">طلبات تم توصيلها</h3>
+                            </div>
+                            <img
+                              class="stat-img"
+                              src="./images/orders/delivered.svg"
+                              alt=""
+                            />
                           </div>
                         </div>
                       </div>
                       <div class="col-3 p-0">
                         <div class="stat border-0">
-                          <div class="px-2">
-                            <p class="stat-num">
-                              2K
-                              <img
-                                src="./images/orders/square-list.svg"
-                                alt=""
-                              />
-                            </p>
-                            <h3 class="stat-title">كل الطلبات</h3>
+                          <div class="px-2 d-flex gap-2">
+                            <div class="d-flex flex-column">
+                              <p class="stat-num">2K</p>
+                              <h3 class="stat-title">كل الطلبات</h3>
+                            </div>
+                            <img src="./images/orders/square-list.svg" alt="" />
                           </div>
                         </div>
                       </div>
@@ -401,12 +403,15 @@
 
                       <div class="input-number">
                         <label for="display-num">عرض</label>
-                        <input
-                          type="number"
-                          id="display-num"
+                        <select
                           class="form-control form-control-lg"
-                          placeholder="50"
-                        />
+                          id="display-num"
+                        >
+                          <option value="10" selected>10</option>
+                          <option value="15">15</option>
+                          <option value="10">20</option>
+                        </select>
+
                         <label for="display-num">طلب</label>
                       </div>
 
